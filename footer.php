@@ -1,0 +1,40 @@
+<footer>
+	<p>© 2012 Matthew Bush - all rights reserved</p>
+	<hr>
+	<ul class="social">
+      <li><a href="http://www.twitter.com/MTTHWBSH" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_orange.png" alt="twitter" /></a></li>
+      <li><a href="http://www.linkedin.com/in/matthewallenbush" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin_orange.png" alt="linkedin" /	  ></a></li>
+      <li><a href="http://www.github.com/MTTHWBSH" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/github_orange.png" alt="github_orange" /></a></li>
+      <li><a href="mailto:bushmat4@gmail.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/mail_orange.png" alt="mail" /></a></li>
+    </ul>		
+</footer><!-- FOOTER -->
+</div><!-- MAIN -->
+
+  <script type="text/javascript">
+  $(document).ready(function() {
+    $('.pagenavi a').each(function(i,a){
+        $(a).attr('href',$(a).attr('href')+'#'+a.parents('.navigation').attr('id')); 
+    });
+  });
+  </script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/jquery.sticky.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/menu-toggle.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/smoothscroll.js"></script>
+
+<!-- Google Analytics -->
+  <script type="text/javascript">
+ 	var _gaq = _gaq || [];
+  		_gaq.push(['_setAccount', 'UA-36826521-1']);
+  		_gaq.push(['_trackPageview']);
+
+  	(function() {
+    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  	})();
+  </script>
+  <?php wp_footer(); ?>
+  </body>
+</html>
