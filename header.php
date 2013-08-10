@@ -3,7 +3,7 @@
 <!--[if IE 7]>		   <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>    	   <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>	   <html class="no-js"> <!--<![endif]-->
-    
+<!--[if lte IE 7]><script src="<?php bloginfo('template_url'); ?>/js/vendor/lte-ie7.js"></script><![endif]-->    
 <head>
   
   <meta charset="utf-8">
@@ -23,7 +23,7 @@
 
   <script type="text/javascript" charset="utf-8">  
     jQuery(document).ready(function(){  
-    jQuery('#navigation a').live('click', function(e){  
+    jQuery('.navigation a').live('click', function(e){  
       e.preventDefault();  
       var link = jQuery(this).attr('href');  
       jQuery('#work').html('<div id="load"><img src="<?php bloginfo('template_url'); ?>/img/load.gif" alt="loading" /></div>');  
@@ -53,11 +53,10 @@
      <header> 
       <div id="top-bar">
     	 <ul class="social">
-        	<li><a href="http://www.twitter.com/MTTHWBSH" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter.png" alt="twitter" /></a></li>
-        	<li><a href="http://www.linkedin.com/in/matthewallenbush" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin.png" 			
-        	 alt="linkedin" /></a></li>
-        	<li><a href="http://www.github.com/MTTHWBSH" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/github.png" alt="github" /></a></li>
-        	<li><a href="mailto:bushmat4@gmail.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/mail.png" alt="mail" /></a></li>
+        	<li><a href="http://www.twitter.com/MTTHWBSH" target="_blank"><span aria-hidden="true" class="icon-twitter"></span></a></li>
+        	<li><a href="http://www.linkedin.com/in/matthewallenbush" target="_blank"><span aria-hidden="true" class="icon-linkedin"></span></a></li>
+        	<li><a href="http://www.github.com/MTTHWBSH" target="_blank"><span aria-hidden="true" class="icon-github"></span></a></li>
+        	<li><a href="mailto:bushmat4@gmail.com" target="_blank"><span aria-hidden="true" class="icon-mail"></span></a></li>
          </ul>
    		 <!-- PICTURE/ABSTRACT/ICONS -->
       		<?php get_search_form(); ?>

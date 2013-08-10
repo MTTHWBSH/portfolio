@@ -12,8 +12,8 @@ Template Name: Archive
 
 <?php $paged = (get_query_var('page')) ? get_query_var('page') : 1;
 $args=array('category_name'=>'blog','posts_per_page'=>10,'paged'=>$paged);
-query_posts($args);
-if (have_posts()) : while (have_posts()) : the_post(); ?>	
+query_posts($args); ?>
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>	
 		
 			<article class="search-result">
 					
@@ -41,9 +41,8 @@ if (have_posts()) : while (have_posts()) : the_post(); ?>
 			
 			<?php endwhile; ?>
 			
-			<div class="navigation">
-				<h3><?php posts_nav_link('  &#9674;  ','&#171; Newer Posts','Older Posts &#187;'); ?></h3>
-				</div><!-- PAGED-NAVIGATION -->
+			<div class="navigation"><h2><?php pagination(); ?></h2></div>
+			
 			<?php wp_reset_query(); ?> 
 			
 			<?php else: ?>

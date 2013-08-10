@@ -4,8 +4,8 @@
   <div id="post">	
 	<?php while (have_posts()) : the_post(); ?>
 
-		<h3><?php the_title(); ?></h3>
-		<p>Posted <?php the_date(); ?> at <?php the_time('g:i a'); ?></p>
+		<h2><?php the_title(); ?></h2>
+		<h4><?php the_excerpt(); ?></h4>
 		
 		<div class="post-content">
 		<hr />

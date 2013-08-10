@@ -1,22 +1,15 @@
 <footer>
-	<p>© 2012 Matthew Bush - all rights reserved</p>
+	<p>© 2013 Matthew Bush - all rights reserved</p>
 	<hr>
 	<ul class="social">
-      <li><a href="http://www.twitter.com/MTTHWBSH" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/twitter_orange.png" alt="twitter" /></a></li>
-      <li><a href="http://www.linkedin.com/in/matthewallenbush" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/linkedin_orange.png" alt="linkedin" /	  ></a></li>
-      <li><a href="http://www.github.com/MTTHWBSH" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/github_orange.png" alt="github_orange" /></a></li>
-      <li><a href="mailto:bushmat4@gmail.com" target="_blank"><img src="<?php bloginfo('template_url'); ?>/img/mail_orange.png" alt="mail" /></a></li>
+      <li><a href="http://www.twitter.com/MTTHWBSH" target="_blank"><span aria-hidden="true" class="icon-twitter"></a></li>
+      <li><a href="http://www.linkedin.com/in/matthewallenbush" target="_blank"><span aria-hidden="true" class="icon-linkedin"></a></li>
+      <li><a href="http://www.github.com/MTTHWBSH" target="_blank"><span aria-hidden="true" class="icon-github"></a></li>
+      <li><a href="mailto:bushmat4@gmail.com" target="_blank"><span aria-hidden="true" class="icon-mail"></a></li>
     </ul>		
 </footer><!-- FOOTER -->
 </div><!-- MAIN -->
 
-  <script type="text/javascript">
-  $(document).ready(function() {
-    $('.pagenavi a').each(function(i,a){
-        $(a).attr('href',$(a).attr('href')+'#'+a.parents('.navigation').attr('id')); 
-    });
-  });
-  </script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/jquery.sticky.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
