@@ -11,9 +11,9 @@
 </div><!-- MAIN -->
 
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/jquery.sticky.js"></script>
+  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/sidr.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/plugins.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/main.js"></script>
-  <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/menu-toggle.js"></script>
   <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/vendor/smoothscroll.js"></script>
 
 <!-- Google Analytics -->

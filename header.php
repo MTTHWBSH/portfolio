@@ -58,12 +58,10 @@
         	<li><a href="http://www.github.com/MTTHWBSH" target="_blank"><span aria-hidden="true" class="icon-github"></span></a></li>
         	<li><a href="mailto:bushmat4@gmail.com" target="_blank"><span aria-hidden="true" class="icon-mail"></span></a></li>
          </ul>
-   		 <!-- PICTURE/ABSTRACT/ICONS -->
-      		<?php get_search_form(); ?>
+      		
+      	<?php get_search_form(); ?>
  	
  	  </div><!-- TOP-BAR -->
-	   		
-	   		 <!-- SHOWCASE -->
 	   		 
 	   		 <div class="intro">
 	   		 	<h1><a href="http://mtthwbsh.com">MATTHEW<span>BUSH</span></a></h1>
@@ -71,6 +69,7 @@
         		<h3>I'm a <span>UX architect</span>, <span>UI designer</span>, and <span>front-end engineer</span> intent on using data driven design to build intuitive interactions and meaningful experiences</h3>
 	   		 </div><!-- INTRO -->
     		</header><!-- HEADER -->
+    		
       		<?php if (is_front_page()) { ?>
       		<nav id="nav">
       		<ul class="nav">
@@ -79,7 +78,6 @@
         		<li class="home"><a href="#home"><img src="<?php bloginfo('template_url'); ?>/img/nav-home.png" alt="personal logo" /></a></li>
         		<li><a href="#blog">blog</a></li>
        		 	<li><a href="#contact">contact</a></li>
-       		 	<li class="search"><?php get_search_form(); ?></li>
       		</ul>
       		</nav><!-- NAV -->
       		<?php } ?>
@@ -91,8 +89,37 @@
         		<li class="home"><a href="http://mtthwbsh.com"><img src="<?php bloginfo('template_url'); ?>/img/nav-home.png" alt="personal logo" /></a></li>
         		<li><a href="http://mtthwbsh.com/#blog">blog</a></li>
        		 	<li><a href="http://mtthwbsh.com/#contact">contact</a></li>
-       		 	<li class="search"><?php get_search_form(); ?></li>
       		</ul>
       		</nav><!-- NAV -->
       		<?php } ?>
+      		
+      		<!-- Mobile Menu -->
+      		      		
+      		<a id="menu" href= "#sidr"><span aria-hidden="true" class="icon-menu"></a> 
+      		
+      		<div id="sidr">
+      		<?php if (is_front_page()) { ?>
+      		<nav>
+      		<ul>
+        		<li><a href="#work">work</a></li>
+        		<li><a href="#resume">resume</a></li>
+           		<li><a href="#blog">blog</a></li>
+       		 	<li><a href="#contact">contact</a></li>
+      		</ul>
+      		</nav><!-- NAV -->
+      		<?php } ?>
+      		<?php if (is_front_page()) { } else { ?>
+      		<nav>
+      		<ul>
+        		<li><a href="http://mtthwbsh.com/#work">work</a></li>
+        		<li><a href="http://mtthwbsh.com/#resume">resume</a></li>
+          		<li><a href="http://mtthwbsh.com/#blog">blog</a></li>
+       		 	<li><a href="http://mtthwbsh.com/#contact">contact</a></li>
+      		</ul>
+      		</nav><!-- NAV -->
+      		<?php } ?>
+      		<?php get_search_form(); ?>
+      		<a href="#home" class="top"><span aria-hidden="true" class="icon-arrow-down-alt1"></a>
+      		</div>
+  		
 	</div><!-- HOME -->
